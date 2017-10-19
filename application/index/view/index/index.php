@@ -1,6 +1,6 @@
 {include file="base/header" /}
 {include file="base/nav" /}
-		
+	
 <!--banner-->
 <div id="myCarousel" class="carousel slide">
 	<div class="carousel-inner">
@@ -34,37 +34,37 @@
 					<ul class="row">
 						<li>
 							<div>
-								<a href="pro_details.html"><img src="__STATIC__/img/index_pic1.jpg"/></a>
+								<a href="{:url('pro_details/index')}"><img src="__STATIC__/img/index_pic1.jpg"/></a>
+								<span><a href="{:url('pro_details/index')}">晶致玻璃 三联体</a></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="{:url('pro_details/index')}"><img src="__STATIC__/img/index_pic1.jpg"/></a>
+								<span><a href="{:url('pro_details/index')}">晶致玻璃 三联体</a></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="{:url('pro_details/index')}"><img src="__STATIC__/img/index_pic1.jpg"/></a>
+								<span><a href="{:url('pro_details/index')}">晶致玻璃 三联体</a></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="{:url('pro_details/index')}"><img src="__STATIC__/img/index_pic1.jpg"/></a>
 								<span><a href="pro_details.html">晶致玻璃 三联体</a></span>
 							</div>
 						</li>
 						<li>
 							<div>
-								<a href="pro_details.html"><img src="__STATIC__/img/index_pic1.jpg"/></a>
-								<span><a href="pro_details.html">晶致玻璃 三联体</a></span>
+								<a href="{:url('pro_details/index')}"><img src="__STATIC__/img/index_pic1.jpg"/></a>
+								<span><a href="{:url('pro_details/index')}">晶致玻璃 三联体</a></span>
 							</div>
 						</li>
 						<li>
 							<div>
-								<a href="pro_details.html"><img src="__STATIC__/img/index_pic1.jpg"/></a>
-								<span><a href="pro_details.html">晶致玻璃 三联体</a></span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="pro_details.html"><img src="__STATIC__/img/index_pic1.jpg"/></a>
-								<span><a href="pro_details.html">晶致玻璃 三联体</a></span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="pro_details.html"><img src="__STATIC__/img/index_pic1.jpg"/></a>
-								<span><a href="pro_details.html">晶致玻璃 三联体</a></span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="pro_details.html"><img src="__STATIC__/img/index_pic1.jpg"/></a>
+								<a href="{:url('pro_details/index')}"><img src="__STATIC__/img/index_pic1.jpg"/></a>
 								<span><a href="pro_details.html">晶致玻璃 三联体</a></span>
 							</div>
 						</li>
