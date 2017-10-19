@@ -1,0 +1,100 @@
+$color:#222426;
+$font-family:"微软雅黑";
+$font-size:1.4rem;
+$font-size2:1.8rem;
+$font-size3:2rem;
+$color2:white;
+$color3:#f2001c;
+/*导航栏*/
+.nav_menu .container .row .nav_bar ul li:first-child a{color: $color2;font-size: $font-size2;font-family: $font-family;}
+.nav_menu .container .row .nav_bar ul li:first-child a:before{content: url(../img/nav_menu_left.png);position: absolute;display: inline-block;left: 4.8%;display: none;}
+.nav_menu .container .row .nav_bar ul li:first-child a:after{content: url(../img/nav_menu_right.png);position: absolute;display: inline-block;left: 68.8%;top:-6.2%;display: none; }
+.nav_menu .container .row .nav_bar ul li:first-child:hover a:before{display: block;}
+.nav_menu .container .row .nav_bar ul li:first-child:hover a:after{display: block;}
+.nav_menu .container .row .nav_bar ul li:nth-child(3) a{color: $color3;}
+.nav_menu .container .row .nav_bar ul li:nth-child(3) a:before{display: block;}
+.nav_menu .container .row .nav_bar ul li:nth-child(3) a:after{display: block;}
+/*导航栏*/
+/*banner*/
+.banner{width: 100%;display: flex;align-items: center;justify-content: center;height: 1080px;background: url(../img/login_banner.jpg) center;}
+.banner .banner_content{width: 1200px;background: rgba(11,12,13,0.8);border: 2px solid #eae4de;display: block;padding-top: 18px;margin-top: 12px;}
+.banner .banner_content .background .pro_background{width: 102%;height: 53px;display: block;background-image: url(../img/title.png);margin-left: -23px;}
+.banner .banner_content .background .pro_background i{width: 21px;height: 21px;display: block;background:url(../img/product_icon.png);float: left;margin-left: -278px;margin-top: 6px;}
+.banner .banner_content .background .pro_background h3{float: left;font-family: $font-family;color: $color2;margin-top: 8px;}
+.banner .banner_content .background .pro_background h3:nth-child(1){font-size: $font-size2;margin-left: 7%;}
+.banner .banner_content .background .pro_background h3:nth-child(2){font-size: 1.6rem;margin-left: 0.8%;}
+.banner .banner_content .background .pro_background p{float: right;font-family: $font-family;font-size: 16px;margin-right: 2%;line-height: 34px;}
+.banner .banner_content .background .pro_background p a{color:#e90e26 ;text-decoration: none;}
+.banner .banner_content .background .pro_background p:nth-child(4) a{color: white;}
+.banner .banner_content .background .pro_background p:nth-child(4) a:hover{color:#f2001c ;}
+.scrollbar{height: 546px;width: 96%;margin: 0 auto;background: transparent;overflow-y: hidden;overflow-x: hidden;margin-right: 1%;}
+.force-overflow{min-height: 450px;}
+/*定义滚动条轨道 内阴影+圆角*/
+#style-10::-webkit-scrollbar-track{background-color: white;}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+#style-10::-webkit-scrollbar{width: 10px;background-color:$color3;}
+/*定义滑块 内阴影+圆角*/
+#style-10::-webkit-scrollbar-thumb{background-color: #AAA;background: $color3;}
+.force-overflow .container{width: 100%;}
+.force-overflow .container .row{width: 100%;margin-top: 12px;}
+.force-overflow .container .row img{display: block;max-width: 100%;}
+.force-overflow .container .row li{position: relative;margin-top: 12px;}
+.force-overflow .container .row li:nth-child(4){margin-top: 40px;}
+.force-overflow .container .row li:nth-child(5){margin-top: 40px;}
+.force-overflow .container .row li:nth-child(6){margin-top: 40px;}
+.force-overflow .container .row .product_infor{position: absolute;left: 0;top: 0;background:rgba(153,153,152,0.7);border: none;width: 100%;height: 100%;
+text-align: center;font-family: $font-family;font-size: 1.4rem;padding-top: 50px;padding-bottom: 60px;display: none;}
+.force-overflow .container .row div{border: 1px solid white;position: relative;width: 359px;}
+.force-overflow .container .row .product_infor button{width: 27.7%;height: 30px;background: #F2001C;color: white;display: block;border: none;float: left;}
+.force-overflow .container .row .product_infor button a{display: block;color: white;text-decoration: none;}
+.force-overflow .container .row .product_infor button:nth-child(4){margin-left: 18.8%;margin-right: 5.5%;}
+.force-overflow .container .row .product_infor p:nth-child(3){margin-left: -5.2%;}
+.force-overflow .container .row .product_infor p{color: #F2001C;}
+.force-overflow .container .row .product_infor a{text-decoration: none;color: #f2001c;font-family: $font-family;font-size: 1.4rem;}
+.force-overflow .container .row div:hover .product_infor{display: block;}
+.force-overflow .container .row div:hover{border: 1px solid #f2001c;}
+.pagination > li:first-child > a{border-radius: 0;padding: 3px 18px;}
+.pagination > li:nth-child(2) > a{padding: 3px 18px;}
+.pagination > li:nth-child(3) > a{padding: 3px 9px;}
+.pagination > li:nth-child(4) > a{padding: 3px 9px;color: white;background:#f8001d ;}
+.pagination > li:nth-child(5) > a{padding: 3px 9px;background: transparent;}
+.pagination > li:nth-child(5) > a:hover{background: transparent;}
+.pagination > li:nth-child(6) > a{padding: 3px 9px;}
+.pagination > li:last-child > a{border-radius: 0;padding: 3px 14px;}
+.pagination > li> a{color: #666666;border: none;background: white;}
+.pagination > li> a:hover{background:#f8001d ;color: white;}
+.pagination > li> a:hover a{color:white;}
+.page{width: 412px;float: right;margin-right: 1.5%;}
+.pagination{width: 100%;}
+.pagination > li{float: left;margin-right: 3.8%;}
+@media only screen and (max-width:1200px){
+.force-overflow .container .row li:nth-child(4){margin-top: 12px;}
+.force-overflow .container .row li:nth-child(5){margin-top: 12px;}
+.force-overflow .container .row li:nth-child(6){margin-top: 12px;}
+.scrollbar{overflow-y: scroll;margin-bottom: 20px;}
+.banner .banner_content{width: 100%;}}
+@media only screen and (max-width:468px){.more{color: white;font-size: 2rem;margin-top: 20px;margin-left: 37%;}.more:hover{color: #f8001d;text-decoration: none;}.page{display: none;}
+}
+@media only screen and (min-width:469px){.more{display: none;}}
+@media only screen and (max-width:440px){.force-overflow .container .row div{width: 250px;}.force-overflow .container .row .product_infor{font-size: 1.2rem;padding-top: 15px;}
+.force-overflow .container .row .product_infor a{font-size: 1.2rem;}}
+.navbar-nav .open .dropdown-menu{position: absolute;top: 47px;border: 1px solid white;}
+.navbar-default{background:transparent;border:1px solid white;border-radius: 2px;width: 100%;float: right;display: block;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{color: white;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{margin-left: -8%;}
+@media only screen and (max-width:600px){.banner .banner_content .background .pro_background p{display: none;}.navbar-default{width: 97%;margin-right: 3%;}}
+@media only screen and (max-width:405px){.navbar-default{width: 95%;margin-right: 5%;}}
+@media only screen and (min-width:601px){.navbar-default{display: none;}}
+@media only screen and (max-width:1217px){.banner .banner_content .background .pro_background i{display: none;}}
+.navbar-default{font-family: $font-family;font-size: 1.4rem;}
+@media only screen and (max-width:604px){.scrollbar{height: 498px;}}
+.navbar-default .navbar-nav > li > a{color: white;}
+.dropdown-menu > li > a{color: white;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color: white;background: transparent;}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{color: white;background: transparent;}
+.dropdown-menu{background-color:transparent;min-width:100px;border:1px solid white;}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{color: #f2001c;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{color: red;}
+@media only screen and (max-width:767px){.force-overflow .container .row div{margin: 0 auto;}}
+
+/*banner*/

@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+/*header*/
+.logo {
+  width: 26%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #222426;
+  position: absolute;
+  z-index: 1;
+}
+
+.container {
+  padding: 0;
+}
+
+.header .container .row div:nth-child(1) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.header .container .row div:nth-child(1) > p {
+  margin: 0;
+  color: white;
+  font-family: "微软雅黑";
+  font-size: 1.4rem;
+}
+
+.header .container .row div:nth-child(2) {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header .container .row div:nth-child(2) > a {
+  color: white;
+  font-family: "微软雅黑";
+  font-size: 1.4rem;
+  margin-right: 9%;
+  text-decoration: none;
+}
+
+.header .container .row div:nth-child(2) > a:hover {
+  color: #f2001c;
+}
+
+.header .container .row div:nth-child(2) > a:nth-last-child(1) {
+  margin-right: 0;
+}
+
+/*header*/
+/*导航栏*/
+.nav_menu .nav_menu_second {
+  float: right;
+  margin-right: 45%;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+}
+
+.nav_menu .nav_menu_second ul li a {
+  font-family: "微软雅黑";
+  font-size: 1.8rem;
+  color: white;
+  display: block;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.nav_menu .nav_menu_second ul li a:hover {
+  color: #f0021e;
+}
+
+.nav_menu {
+  background: rgba(11, 12, 13, 0.8);
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 100%;
+}
+
+.nav_menu .container .row .logo img {
+  padding: 37px 0;
+  float: left;
+  display: block;
+}
+
+.nav_menu .container .row .nav_bar {
+  float: left;
+  height: 120px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+}
+
+.nav_menu .container .row .nav_bar ul li {
+  float: left;
+  width: 20%;
+  line-height: 120px;
+  text-align: center;
+}
+
+.nav_menu .container .row .nav_bar ul li a {
+  font-family: "微软雅黑";
+  font-size: 1.8rem;
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav_menu .container .row .nav_bar ul .state a:after {
+  content: url(../img/nav_menu_right.png);
+  position: absolute;
+  display: inline-block;
+  left: 84.8%;
+  top: -6.2%;
+  display: none;
+}
+
+.nav_menu .container .row .nav_bar ul .state:hover a:before {
+  display: block;
+}
+
+.nav_menu .container .row .nav_bar ul .state:hover a:after {
+  display: block;
+}
+
+.nav_menu .container .row .nav_bar ul li a:hover {
+  color: #f2001c;
+  font-family: "微软雅黑";
+}
+
+.search {
+  padding-top: 40px;
+  color: #a1a1a1;
+}
+
+.nav_menu .input-group {
+  float: right;
+  width: 23.6%;
+}
+
+.search .form-control {
+  font-size: 1.8rem;
+  font-family: "微软雅黑";
+  padding: 0px 16px;
+  height: 40px;
+  outline: none;
+  line-height: 40px;
+}
+
+.search input {
+  border: 1px #999999 solid;
+}
+
+.input-group-addon {
+  background-color: #f2001c;
+  border: 1px #999999 solid;
+  cursor: pointer;
+}
+
+.glyphicon-search {
+  color: white;
+}
+
+.nav_menu .container .row div:nth-child(4) {
+  color: white;
+  font-size: 2rem;
+  display: none;
+  line-height: 66px;
+}
+
+/*a:before媒体查询*/
+@media only screen and (min-width: 994px) and (max-width: 1200px) {
+  .nav_menu .container .row .nav_bar ul .state a:before {
+    content: url(../img/nav_menu_left.png);
+    position: absolute;
+    display: inline-block;
+    left: -16.2%;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav_menu .container .row .nav_bar ul .state a:before {
+    content: url(../img/nav_menu_left.png);
+    position: absolute;
+    display: inline-block;
+    left: -10.2%;
+    display: none;
+  }
+}
+
+/*a:before媒体查询*/
+/*移动端布局*/
+@media only screen and (max-width: 780px) {
+  .header .container .row div:nth-child(1) {
+    display: none;
+  }
+  .nav_menu .container .row div:nth-child(4) {
+    display: block;
+  }
+  .nav_menu .container .row .nav_bar {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .nav_menu .container .row .logo img {
+    padding: 10px 0;
+  }
+  .header .container .row div:nth-child(2) > a:nth-child(1) {
+    display: none;
+  }
+  .header .container .row div:nth-child(2) > a:nth-child(4) {
+    display: none;
+  }
+  .nav_menu .container .row div:nth-child(4) {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 781px) and (max-width: 994px) {
+  .nav_menu .container .row .nav_bar {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .nav_menu .container .row .logo img {
+    padding: 10px 0;
+  }
+  .nav_menu .container .row div:nth-child(4) {
+    display: block;
+    text-align: right;
+  }
+}
+
+/*row*/
+@media only screen and (max-width: 1020px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1220px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/*row*/
+/*移动端布局*/
+/*导航栏*/
+/*footer*/
+.footer {
+  width: 100%;
+  height: 40px;
+  background: #222426;
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer div {
+  overflow: hidden;
+  display: inline-block;
+  line-height: 40px;
+}
+
+.footer span {
+  float: left;
+  font-size: 1.4rem;
+  color: #959699;
+  font-family: "微软雅黑";
+}
+
+.footer ul {
+  float: left;
+  margin: 0;
+  margin-left: 80px;
+}
+
+.footer ul li {
+  float: left;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  color: #959699;
+  font-family: "微软雅黑";
+}
+
+.footer ul li:nth-child(2) {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.footer ul li:nth-child(3) {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.footer ul li:nth-child(4) {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+@media only screen and (max-width: 504px) {
+  .footer {
+    height: 80px;
+  }
+  .footer span {
+    clear: both;
+  }
+  .footer ul {
+    clear: both;
+    margin-left: 0;
+  }
+}
+
+/*footer*/

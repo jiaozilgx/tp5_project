@@ -1,0 +1,60 @@
+$color:#222426;
+$font-family:"微软雅黑";
+$font-size:1.4rem;
+$font-size2:1.8rem;
+$font-size3:2rem;
+$color2:white;
+$color3:#f2001c;
+/*导航栏*/
+.nav_menu .nav_menu_second{float: right;margin-right: 45%;text-align: center;display: none;cursor: pointer;}
+.nav_menu .nav_menu_second dl dd a{font-family:$font-family;font-size: $font-size2;color: $color2;display: block;text-decoration: none;line-height: 40px;}
+.icon{cursor: pointer;}
+.nav_menu .nav_menu_second dl dd a:hover{color: #f0021e;}
+.nav_menu .container .row .nav_bar ul li:first-child a{color: $color2;font-size: $font-size2;font-family: $font-family;}
+.nav_menu .container .row .nav_bar ul li:first-child a:before{content: url(../img/nav_menu_left.png);position: absolute;display: inline-block;left: 4.8%;display: none;}
+.nav_menu .container .row .nav_bar ul li:first-child a:after{content: url(../img/nav_menu_right.png);position: absolute;display: inline-block;left: 68.8%;top:-6.2%;display: none; }
+.nav_menu .container .row .nav_bar ul li:first-child:hover a:before{display: block;}
+.nav_menu .container .row .nav_bar ul li:first-child:hover a:after{display: block;}
+.nav_menu .container .row .nav_bar ul li:nth-child(5) a{color: $color3;}
+.nav_menu .container .row .nav_bar ul li:nth-child(5) a:before{display: block;}
+.nav_menu .container .row .nav_bar ul li:nth-child(5) a:after{display: block;}
+/*导航栏*/
+/*banner*/
+.scrollbar{height: 620px;width: 98.2%;margin: 0 auto;background: transparent;overflow-y: hidden;overflow-x: hidden;margin-right: 1%;}
+.force-overflow{min-height: 450px;width: 100%;}
+/*定义滚动条轨道 内阴影+圆角*/
+#style-10::-webkit-scrollbar-track{background-color: white;}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+#style-10::-webkit-scrollbar{width: 10px;background-color:$color3;}
+/*定义滑块 内阴影+圆角*/
+#style-10::-webkit-scrollbar-thumb{background-color: #AAA;background: $color3;}
+.banner{width: 100%;display: flex;align-items: center;justify-content: center;height: 1080px;background: url(../img/login_banner.jpg) center;}
+.banner .banner_content{width: 1200px;background: rgba(11,12,13,0.8);border: 2px solid #eae4de;display: block;padding-top: 18px;margin-top: 14px;}
+.banner .banner_content .background div{width: 102%;height: 53px;display: block;background-image: url(../img/title.png);margin-left: -23px;}
+.banner .banner_content .background div i{width: 21px;height: 21px;display: block;background-image:url(../img/contact.png);float: left;margin-left: -214px;margin-top: 6px;}
+.banner .banner_content .background div h3{float: left;font-family: $font-family;color: $color2;margin-top: 8px;}
+.banner .banner_content .background div h3:nth-child(1){font-size: $font-size2;margin-left: 7%;}
+.banner .banner_content .background div h3:nth-child(2){font-size: 1.6rem;margin-left: 0.8%;}
+.banner .banner_content .background div p{float: right;font-family: $font-family;font-size: 16px;margin-right: 2%;line-height: 34px;}
+.banner .banner_content .background div p a{color:#e90e26 ;text-decoration: none;}
+.banner .banner_content .background div p:nth-child(4) a{color: #f2001c;}
+.map{width: 99%;margin: 0 auto;margin-top: 6px;margin-bottom:76px ;position: relative;}
+.map .container .row div:nth-child(1){width: 45.7%;font-family: $font-family;font-size: 1.4rem;position: absolute;left: 2%;top: 47%;color: white;}
+.map .container .row div:nth-child(1) textarea{width: 100%;background: rgba(11,12,13,0.8);height: 150px;border: 1px solid #fa495c;padding-top: 14px;padding-left: 4%;outline: none;}
+.map .container .row div:nth-child(1) input{border: 1px solid #fa495c;height: 30px;width: 54%;background: rgba(11,12,13,0.8);color: white;line-height:30px;padding-left: 4%;margin-bottom: 6px;outline: none;}
+.map .container .row div:nth-child(1) button{border: 1px solid white;height: 30px;width: 44.8%;background: rgba(246,45,65,0.8);margin-bottom: 6px;outline: none;}
+.map .container .row div:nth-child(1) button:nth-child(9){height: 66px;float: right;margin-top: -73px;outline: none;}
+input::-webkit-input-placeholder{color: white;}
+textarea::-webkit-input-placeholder{color: white;}
+.map .container .row .contact_ways{width: 45.7%;font-family: $font-family;font-size: 1.4rem;position: absolute;top:47%;right: 2%;color: white;background: rgba(11,12,13,0.8);
+text-align: left;padding-top: 44px;padding-left: 13%;border: 1px solid #f04150;}
+.map .container .row .contact_ways h4{font-size: 1.6rem;margin-bottom: 32px;}
+.map .container .row .contact_ways p:nth-child(5){margin-bottom: 44px;}
+@media only screen and (max-width:1200px){.scrollbar{overflow-y: scroll;margin-bottom: 20px;}}
+@media only screen and (max-width:1217px){.banner .banner_content .background div i{display: none;}}
+@media only screen and (max-width:600px){.banner .banner_content .background div p{display: none;}.banner .banner_content{width: 100%;}}
+@media only screen and (min-width:422px) and (max-width:868px){.map .container .row div:nth-child(1){position: relative;width: 100%;top: 0;left: 0;margin-top: 20px;}
+.map .container .row div:nth-child(2){width: 100%;position: relative;right: 0;top: 0;margin-top: 20px;}.map .container .row div:nth-child(1) button:nth-child(9){margin-right: 2px;}}
+@media only screen and (max-width:421px){.map .container .row div:nth-child(1){position: relative;width: 100%;top: 0;left: 0;margin-top: 20px;}
+.map .container .row .contact_ways{width: 100%;position: relative;right: 0;top: 0;margin-top: 20px;}.map .container .row div:nth-child(1) button{width: 54%;}
+.map .container .row div:nth-child(1) button:nth-child(9){float: left;margin-top: 0;}.map .container .row .contact_ways{width: 100%;margin-top: 81px;}}
